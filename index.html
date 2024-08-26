@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friends Bakery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" data-filter="all">ALL ITEMS</a></li>
+                <li><a href="#" data-filter="cakes">CAKES</a></li>
+                <li><a href="#" data-filter="cupcakes">CUPCAKES</a></li>
+                <li><a href="#" data-filter="donuts">DONUTS</a></li>
+            </ul>
+            <input type="text" id="search-bar" placeholder="Search items...">
+            <div id="clear-container">
+                <button id="clear-cart"><i class="material-icons">delete</i></button>
+            </div>
+            <div id="cart-container">
+                <button id="cart-button">
+                    Items in Cart: <span id="cart-count">0</span>
+                    <span>$<span id="cart-total">0.00</span></span></button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="item-container"></section>
+
+    <script src="js/script.js"></script> 
+</body>
+</html>
